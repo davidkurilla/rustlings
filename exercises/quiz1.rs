@@ -13,10 +13,18 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(quantity_of_apples_ordered: u32) -> u32 {
+
+    let mut price_of_apple = 2;
+
+    if quantity_of_apples_ordered > 40 {
+
+        price_of_apple = 1;
+    }
+
+    return quantity_of_apples_ordered * price_of_apple;
+}
 
 // Don't modify this function!
 #[test]
